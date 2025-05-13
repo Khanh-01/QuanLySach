@@ -32,6 +32,4 @@ public abstract class Document {
     public void setNumberOfCopies(int numberOfCopies) {
         this.numberOfCopies = numberOfCopies;
     }
-
-    public abstract String getPublicationDay();
 }

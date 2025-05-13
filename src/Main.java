@@ -29,20 +29,25 @@ public class Main {
                     String author = scanner.nextLine();
                     System.out.print("Nhập số trang: ");
                     int pages = scanner.nextInt();
+                    scanner.nextLine();
                     manager.addDocument(new Book(id, publisher, copies, author, pages));
                 } else if (type.equalsIgnoreCase("Magazine")) {
                     System.out.print("Nhập số phát hành: ");
                     int issue = scanner.nextInt();
+                    scanner.nextLine();
                     System.out.print("Nhập tháng phát hành: ");
                     int month = scanner.nextInt();
+                    scanner.nextLine();
                     manager.addDocument(new Magazine(id, publisher, copies, issue, month));
                 } else if (type.equalsIgnoreCase("Newspaper")) {
                     System.out.print("Nhập ngày phát hành: ");
                     int day = scanner.nextInt();
+                    scanner.nextLine();
                     manager.addDocument(new Newspaper(id, publisher, copies, day));
                 } else {
                     System.out.println("Invalid");
                 }
+
             } else if (choice == 2) {
                 System.out.print("Nhập mã tài liệu cần xóa: ");
                 String removeId = scanner.nextLine();
